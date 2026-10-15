@@ -20,11 +20,15 @@ quantities. If these values are edited later, a new evaluation of a past period
 may differ from the earlier result. Each saved evaluation preserves its result
 and calculation notes.
 """,
-    "author": "Supplier Performance Scorecard",
+    "author": "Asma Missawi",
     "license": "LGPL-3",
     "price": 79.0,
     "currency": "EUR",
     "depends": ["purchase_stock", "mail"],
+    "images": [
+        "static/description/banner.png",
+        "static/description/dashboard.png",
+    ],
     "data": [
         "security/supplier_scorecard_security.xml",
         "security/ir.model.access.csv",
