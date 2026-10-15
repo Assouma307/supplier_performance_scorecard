@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_supplier_evaluation_list" model="ir.ui.view">
+        <field name="name">supplier.performance.evaluation.list</field>
+        <field name="model">supplier.performance.evaluation</field>
+        <field name="arch" type="xml">
+            <list string="Supplier Performance Evaluation" create="0" edit="0" delete="0" default_order="evaluated_at desc">
+                <field name="evaluated_at"/><field name="supplier_id"/><field name="company_id" groups="base.group_multi_company"/>
+                <field name="period_start"/><field name="period_end"/><field name="score"/>
+                <field name="risk_level" widget="badge"/><field name="confidence"/><field name="total_receipts"/><field name="formula_version"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_supplier_evaluation_form" model="ir.ui.view">
+        <field name="name">supplier.performance.evaluation.form</field>
+        <field name="model">supplier.performance.evaluation</field>
+        <field name="arch" type="xml">
+            <form string="Supplier Evaluation" create="0" edit="0" delete="0">
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group><group><field name="scorecard_id"/><field name="supplier_id"/><field name="company_id"/><field name="period_start"/><field name="period_end"/></group>
+                    <group><field name="evaluated_at"/><field name="score"/><field name="risk_level" widget="badge"/><field name="confidence"/><field name="formula_version"/></group></group>
+                    <group string="Indicators"><group><field name="punctuality_score"/><field name="on_time_receipts"/><field name="late_receipts"/><field name="total_receipts"/><field name="receipts_missing_planned_date"/></group><group><field name="completeness_score"/><field name="evaluated_purchase_orders"/><field name="has_punctuality_data"/><field name="has_completeness_data"/></group></group>
+                    <group string="Calculation Notes"><field name="evaluation_note" nolabel="1"/></group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_supplier_evaluation" model="ir.actions.act_window">
+        <field name="name">Evaluations History</field>
+        <field name="res_model">supplier.performance.evaluation</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="menu_supplier_evaluation" name="Evaluations History" parent="menu_supplier_scorecard_root" action="action_supplier_evaluation" sequence="25" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+</odoo>

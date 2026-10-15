@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_supplier_scorecard" model="ir.ui.view">
+        <field name="name">res.partner.form.supplier.scorecard</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_open_supplier_scorecards" type="object" class="oe_stat_button" icon="fa-line-chart" groups="supplier_performance_scorecard.group_supplier_scorecard_user" invisible="supplier_rank == 0">
+                    <field name="supplier_scorecard_count" widget="statinfo" string="Scorecards"/>
+                </button>
+            </xpath>
+        </field>
+    </record>
+</odoo>

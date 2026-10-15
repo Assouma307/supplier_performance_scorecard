@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_supplier_scorecard_list" model="ir.ui.view">
+        <field name="name">supplier.performance.scorecard.list</field>
+        <field name="model">supplier.performance.scorecard</field>
+        <field name="arch" type="xml">
+            <list string="Supplier Scorecards" default_order="score desc">
+                <field name="supplier_id"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="period_start"/>
+                <field name="period_end"/>
+                <field name="score"/>
+                <field name="risk_level" widget="badge" decoration-success="risk_level == 'low'" decoration-warning="risk_level == 'moderate'" decoration-danger="risk_level in ('high', 'critical')"/>
+                <field name="confidence" widget="badge"/>
+                <field name="total_receipts"/>
+                <field name="late_receipts"/>
+                <field name="last_evaluated_at"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_supplier_scorecard_form" model="ir.ui.view">
+        <field name="name">supplier.performance.scorecard.form</field>
+        <field name="model">supplier.performance.scorecard</field>
+        <field name="arch" type="xml">
+            <form string="Supplier Scorecard">
+                <header>
+                    <button name="action_recompute_score" type="object" string="Recalculate Score" class="oe_highlight" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+                    <button name="action_view_history" type="object" string="Evaluations History" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+                    <button name="action_open_supplier" type="object" string="Open Supplier"/>
+                    <field name="risk_level" widget="statusbar" statusbar_visible="low,moderate,high,critical"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group string="Supplier and Period">
+                            <field name="supplier_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="period_start"/>
+                            <field name="period_end"/>
+                        </group>
+                        <group string="Overall Evaluation">
+                            <field name="score"/>
+                            <field name="risk_level" widget="badge"/>
+                            <field name="confidence" widget="badge"/>
+                            <field name="last_evaluated_at"/>
+                            <field name="formula_version"/>
+                        </group>
+                    </group>
+                    <group string="Indicators">
+                        <group>
+                            <field name="punctuality_score"/>
+                            <field name="on_time_receipts"/>
+                            <field name="late_receipts"/>
+                            <field name="total_receipts"/>
+                            <field name="receipts_missing_planned_date"/>
+                        </group>
+                        <group>
+                            <field name="completeness_score"/>
+                            <field name="evaluated_purchase_orders"/>
+                            <field name="has_punctuality_data"/>
+                            <field name="has_completeness_data"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Calculation Notes"><field name="evaluation_note" nolabel="1"/></page>
+                        <page string="History"><field name="evaluation_ids" nolabel="1"><list default_order="evaluated_at desc"><field name="evaluated_at"/><field name="score"/><field name="risk_level" widget="badge"/><field name="confidence"/><field name="total_receipts"/><field name="formula_version"/></list></field></page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_supplier_scorecard_search" model="ir.ui.view">
+        <field name="name">supplier.performance.scorecard.search</field>
+        <field name="model">supplier.performance.scorecard</field>
+        <field name="arch" type="xml">
+            <search string="Supplier Scorecards">
+                <field name="supplier_id"/>
+                <field name="company_id"/>
+                <field name="risk_level"/>
+                <field name="confidence"/>
+                <filter name="risk_high" string="High / Critical Risk" domain="[('risk_level', 'in', ['high', 'critical'])]"/>
+                <filter name="risk_insufficient" string="Insufficient data" domain="[('risk_level', '=', 'insufficient')]"/>
+            </search>
+        </field>
+    </record>
+    <record id="action_supplier_scorecard" model="ir.actions.act_window">
+        <field name="name">Supplier Scorecards</field>
+        <field name="res_model">supplier.performance.scorecard</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_supplier_scorecard_search"/>
+    </record>
+    <menuitem id="menu_supplier_scorecard_root" name="Supplier Performance" parent="purchase.menu_purchase_root" sequence="75" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+    <menuitem id="menu_supplier_scorecard" name="Scorecards" parent="menu_supplier_scorecard_root" action="action_supplier_scorecard" sequence="10" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+    <record id="action_supplier_scorecard_batch" model="ir.actions.act_window">
+        <field name="name">Generate Scorecards</field>
+        <field name="res_model">supplier.performance.scorecard.batch.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+    <menuitem id="menu_supplier_scorecard_batch" name="Generate Scorecards" parent="menu_supplier_scorecard_root" action="action_supplier_scorecard_batch" sequence="20" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+</odoo>

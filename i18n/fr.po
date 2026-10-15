@@ -1,0 +1,760 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-15 00:00+0000\n"
+"PO-Revision-Date: 2026-10-15 00:00+0000\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Score weighted from purchase receipt punctuality and purchase order completeness."
+msgstr "Score pondéré calculé à partir de la ponctualité des réceptions et de la complétude des commandes d’achat."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "If enabled, existing scorecards are opened in the result but are not duplicated."
+msgstr "Si cette option est activée, les fiches d’évaluation existantes sont incluses dans le résultat sans être dupliquées."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Performance Scorecard"
+msgstr "Évaluation des performances fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Performance Risk Event"
+msgstr "Événement de risque fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Supplier Performance Dashboard"
+msgstr "Tableau de bord des performances fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_evaluation_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_evaluation_list
+msgid "Supplier Performance Evaluation"
+msgstr "Historique des évaluations fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_batch_wizard_form
+msgid "Supplier Scorecard Batch Wizard"
+msgstr "Assistant de génération des fiches d’évaluation fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Critical score"
+msgstr "Score critique"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Low score"
+msgstr "Score faible"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Score deterioration"
+msgstr "Dégradation du score"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Repeated late receipts"
+msgstr "Retards répétés de réception"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Moderate"
+msgstr "Modéré"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+msgid "High"
+msgstr "Élevé"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Critical"
+msgstr "Critique"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "New"
+msgstr "Nouveau"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "In Progress"
+msgstr "En cours"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Resolved"
+msgstr "Résolu"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Low"
+msgstr "Faible"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Medium"
+msgstr "Moyen"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+msgid "Insufficient"
+msgstr "Données insuffisantes"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+msgid "Insufficient data"
+msgstr "Données insuffisantes"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_evaluation_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_evaluation_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_batch_wizard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Company"
+msgstr "Société"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Period Start"
+msgstr "Début de période"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Period End"
+msgstr "Fin de période"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Overall Score (%)"
+msgstr "Score global (%)"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Punctuality (%)"
+msgstr "Ponctualité (%)"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Order Completeness (%)"
+msgstr "Complétude des commandes (%)"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Risk Level"
+msgstr "Niveau de risque"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Data Confidence"
+msgstr "Fiabilité des données"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Last Evaluated At"
+msgstr "Dernière évaluation le"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Formula Version"
+msgstr "Version de la formule"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Evaluation Notes"
+msgstr "Notes d’évaluation"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Evaluable Receipts"
+msgstr "Réceptions évaluables"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "On-time Receipts"
+msgstr "Réceptions à temps"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Late Receipts"
+msgstr "Réceptions en retard"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Receipts Missing Planned Date"
+msgstr "Réceptions sans date prévue"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Evaluated Purchase Orders"
+msgstr "Commandes d’achat évaluées"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_evaluation_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_evaluation_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Evaluations History"
+msgstr "Historique des évaluations"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Risk Event"
+msgstr "Événement de risque"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Detected At"
+msgstr "Date de détection"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Severity"
+msgstr "Gravité"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Description"
+msgstr "Description"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+msgid "Start Follow-up"
+msgstr "Démarrer le suivi"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+msgid "Create Follow-up Activity"
+msgstr "Créer une activité de suivi"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+msgid "Resolve"
+msgstr "Clôturer"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+msgid "Open Scorecard"
+msgstr "Ouvrir la fiche d’évaluation"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Performance Overview"
+msgstr "Vue d’ensemble des performances"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Risk Distribution"
+msgstr "Répartition des risques"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Open Alerts"
+msgstr "Alertes ouvertes"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Average Overall Score (%)"
+msgstr "Score global moyen (%)"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Average Punctuality (%)"
+msgstr "Ponctualité moyenne (%)"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "On-time Receipt Rate (%)"
+msgstr "Taux de réceptions à temps (%)"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Evaluated Scorecards"
+msgstr "Fiches d’évaluation traitées"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Evaluated Suppliers"
+msgstr "Fournisseurs évalués"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_performance_dashboard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_risk_event_search
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_graph
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_pivot
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search_dashboard
+msgid "Critical Alerts"
+msgstr "Alertes critiques"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "High Alerts"
+msgstr "Alertes de niveau élevé"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_batch_wizard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_list
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_search
+msgid "Generate Scorecards"
+msgstr "Générer les fiches d’évaluation"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_batch_wizard_form
+msgid "Include Existing Scorecards"
+msgstr "Inclure les fiches existantes"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "The overall score is %(score).2f/100, below the critical threshold of 50."
+msgstr "Le score global est de %(score).2f/100, inférieur au seuil critique de 50."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "The overall score is %(score).2f/100, below the attention threshold of 70."
+msgstr "Le score global est de %(score).2f/100, inférieur au seuil de vigilance de 70."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier score is critical"
+msgstr "Le score du fournisseur est critique"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier score requires attention"
+msgstr "La performance du fournisseur nécessite une attention particulière"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier performance has deteriorated"
+msgstr "La performance du fournisseur s’est dégradée"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Repeated late supplier receipts"
+msgstr "Retards répétés de réception du fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "The available data is insufficient to ensure that this assessment is reliable."
+msgstr "Les données disponibles sont insuffisantes pour garantir la fiabilité de cette évaluation."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Reference"
+msgstr "Référence"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Scorecard"
+msgstr "Fiche d’évaluation fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Scorecards"
+msgstr "Fiches d’évaluation fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Scorecard"
+msgstr "Fiche d’évaluation"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Evaluation"
+msgstr "Évaluation fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Risk Alerts"
+msgstr "Alertes de risque fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Risk Alert"
+msgstr "Alerte de risque fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier and Period"
+msgstr "Fournisseur et période"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Overall Evaluation"
+msgstr "Évaluation globale"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Indicators"
+msgstr "Indicateurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Recalculate Score"
+msgstr "Recalculer le score"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Open Supplier"
+msgstr "Ouvrir le fournisseur"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "High / Critical Risk"
+msgstr "Risque élevé / critique"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Low Risk"
+msgstr "Risque faible"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Moderate Risk"
+msgstr "Risque modéré"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "High Risk"
+msgstr "Risque élevé"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Critical Risk"
+msgstr "Risque critique"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_batch_wizard_form
+msgid "Generate Supplier Scorecards"
+msgstr "Générer les fiches d’évaluation fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_batch_wizard_form
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Calculation Notes"
+msgstr "Notes de calcul"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "History"
+msgstr "Historique"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Evaluated Only"
+msgstr "Évaluées uniquement"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Group by Risk Level"
+msgstr "Regrouper par niveau de risque"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Average Supplier Score by Risk Level"
+msgstr "Score moyen des fournisseurs par niveau de risque"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Performance Analysis"
+msgstr "Analyse des performances fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "All Scorecards"
+msgstr "Toutes les fiches d’évaluation"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Charts and Analysis"
+msgstr "Graphiques et analyses"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "View Critical Alerts"
+msgstr "Consulter les alertes critiques"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "View High-Risk Suppliers"
+msgstr "Consulter les fournisseurs à risque élevé"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Risk Evidence"
+msgstr "Éléments justificatifs du risque"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Explanation"
+msgstr "Explication"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Supplier Performance & Risk Scorecard"
+msgstr "Évaluation des performances et des risques fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Evaluate supplier delivery performance and identify purchasing risks"
+msgstr "Évaluer les performances de livraison des fournisseurs et identifier les risques liés aux achats"
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Note: available data is insufficient to ensure this assessment is reliable."
+msgstr "Attention : les données disponibles sont insuffisantes pour garantir la fiabilité de cette évaluation."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "The score decreased by %(drop).2f points, from %(previous).2f to %(current).2f."
+msgstr "Le score a diminué de %(drop).2f points, passant de %(previous).2f à %(current).2f."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "%(late)s of the last %(total)s evaluable receipts were late."
+msgstr "%(late)s des %(total)s dernières réceptions évaluables étaient en retard."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "The period start and end dates are required."
+msgstr "Les dates de début et de fin de période sont obligatoires."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "The start date must be on or before the end date."
+msgstr "La date de début doit être antérieure ou égale à la date de fin."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "You cannot create a scorecard for a company you cannot access."
+msgstr "Vous ne pouvez pas créer une fiche d’évaluation pour une société à laquelle vous n’avez pas accès."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Please select a supplier first."
+msgstr "Veuillez d’abord sélectionner un fournisseur."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Please enter both period dates before evaluating the supplier."
+msgstr "Veuillez renseigner les deux dates de période avant d’évaluer le fournisseur."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "No scorecards were generated. Existing scorecards were skipped; enable “Include Existing Scorecards” to open them."
+msgstr "Aucune fiche d’évaluation n’a été générée. Les fiches existantes ont été ignorées ; activez « Inclure les fiches existantes » pour les ouvrir."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "The weighted score is calculated from receipt punctuality and purchase order completeness."
+msgstr "Le score pondéré est calculé à partir de la ponctualité des réceptions et de la complétude des commandes d’achat."
+
+#. module: supplier_performance_scorecard
+#: model_terms:ir.ui.view,arch_db:supplier_performance_scorecard.view_supplier_scorecard_form
+msgid "Punctuality uses the currently recorded scheduled date on each completed receipt."
+msgstr "La ponctualité est calculée à partir de la date prévue actuellement enregistrée pour chaque réception terminée."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Weighted score calculated from receipt punctuality and purchase order completeness."
+msgstr "Score pondéré calculé à partir de la ponctualité des réceptions et de la complétude des commandes d’achat."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "A scorecard already exists for this supplier, company and period."
+msgstr "Une fiche d’évaluation existe déjà pour ce fournisseur, cette société et cette période."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Select at least one company you can access."
+msgstr "Sélectionnez au moins une société à laquelle vous avez accès."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "No supplier scorecard was found or generated. Check that supplier contacts exist and are configured as suppliers."
+msgstr "Aucune fiche d’évaluation fournisseur n’a été trouvée ou générée. Vérifiez que les contacts fournisseurs existent et sont bien définis comme fournisseurs."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "No new scorecards were generated. Existing scorecards were skipped; enable “Include Existing Scorecards” to open them."
+msgstr "Aucune nouvelle fiche d’évaluation n’a été générée. Les fiches existantes ont été ignorées ; activez « Inclure les fiches existantes » pour les ouvrir."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Scorecards"
+msgstr "Fiches d’évaluation"
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Supplier Performance"
+msgstr "Performance des fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Risk Alerts"
+msgstr "Alertes de risque"
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Formula v%(version)s: receipt punctuality accounts for 70%% and purchase order completeness "
+msgstr "Formule v%(version)s : la ponctualité des réceptions compte pour 70%% et la complétude des commandes d’achat "
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Punctuality is calculated per completed receipt; partial receipts are "
+msgstr "La ponctualité est calculée pour chaque réception terminée ; les réceptions partielles sont "
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "counted separately. Completeness uses the currently received quantities on purchase orders. "
+msgstr "comptabilisées séparément. La complétude repose sur les quantités actuellement reçues pour les commandes d’achat. "
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "Receipts without a scheduled date are excluded from the punctuality calculation. The scheduled date "
+msgstr "Les réceptions sans date prévue sont exclues du calcul de ponctualité. La date prévue "
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_scorecard.py:1
+msgid "may have been changed after the supplier’s original commitment."
+msgstr "a pu être modifiée après l’engagement initial du fournisseur."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "Supplier Evaluations: Detect Risks"
+msgstr "Évaluations fournisseurs : détection des risques"
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "Supplier Scorecard User"
+msgstr "Utilisateur des fiches d’évaluation fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "Supplier Scorecard Manager"
+msgstr "Responsable des fiches d’évaluation fournisseurs"
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "Supplier Evaluations: Allowed Companies"
+msgstr "Évaluations fournisseurs : sociétés autorisées"
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "An active alert already exists for this scorecard and rule."
+msgstr "Une alerte active existe déjà pour cette fiche d’évaluation et cette règle."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "Keep the original detection date and follow-up state; update the supporting evidence."
+msgstr "Conserver la date de détection et l’état de suivi initiaux ; actualiser les éléments justificatifs."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "Score-threshold and repeated-delay alerts are automatically resolved "
+msgstr "Les alertes liées au seuil du score et aux retards répétés sont clôturées automatiquement "
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "when their conditions are no longer met. Score-deterioration alerts remain open "
+msgstr "lorsque leurs conditions ne sont plus réunies. Les alertes de dégradation du score restent ouvertes "
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "until closed by a user because they represent a detected trend."
+msgstr "jusqu’à leur clôture par un utilisateur, car elles représentent une tendance détectée."
+
+#. module: supplier_performance_scorecard
+#: code:addons/supplier_performance_scorecard/models/supplier_performance_risk_event.py:1
+msgid "for 30%%. Weights are recalculated if a component has no usable data. "
+msgstr "pour 30%%. Les pondérations sont recalculées si une composante ne dispose pas de données exploitables. "

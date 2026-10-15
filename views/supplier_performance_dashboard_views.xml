@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_supplier_scorecard_graph" model="ir.ui.view">
+        <field name="name">supplier.performance.scorecard.graph</field>
+        <field name="model">supplier.performance.scorecard</field>
+        <field name="arch" type="xml">
+            <graph string="Average Supplier Score by Risk Level" type="bar">
+                <field name="risk_level" type="row"/>
+                <field name="score" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="view_supplier_scorecard_pivot" model="ir.ui.view">
+        <field name="name">supplier.performance.scorecard.pivot</field>
+        <field name="model">supplier.performance.scorecard</field>
+        <field name="arch" type="xml">
+            <pivot string="Supplier Performance Analysis">
+                <field name="company_id" type="row"/>
+                <field name="risk_level" type="row"/>
+                <field name="score" type="measure"/>
+                <field name="punctuality_score" type="measure"/>
+                <field name="completeness_score" type="measure"/>
+                <field name="total_receipts" type="measure"/>
+                <field name="late_receipts" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="view_supplier_scorecard_search_dashboard" model="ir.ui.view">
+        <field name="name">supplier.performance.scorecard.search.dashboard</field>
+        <field name="model">supplier.performance.scorecard</field>
+        <field name="arch" type="xml">
+            <search string="Supplier Performance Analysis">
+                <field name="supplier_id"/>
+                <field name="risk_level"/>
+                <filter name="evaluated_only" string="Evaluated Only" domain="[('last_evaluated_at', '!=', False)]"/>
+                <filter name="high_risk_only" string="High / Critical Risk" domain="[('risk_level', 'in', ['high', 'critical'])]"/>
+                <filter name="group_by_risk" string="Group by Risk Level" context="{'group_by': 'risk_level'}"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_supplier_scorecard_analytics" model="ir.actions.act_window">
+        <field name="name">Analyse des performances</field>
+        <field name="res_model">supplier.performance.scorecard</field>
+        <field name="view_mode">graph,pivot,list</field>
+        <field name="search_view_id" ref="view_supplier_scorecard_search_dashboard"/>
+    </record>
+
+    <record id="view_supplier_performance_dashboard_form" model="ir.ui.view">
+        <field name="name">supplier.performance.dashboard.form</field>
+        <field name="model">supplier.performance.dashboard</field>
+        <field name="arch" type="xml">
+            <form string="Supplier Performance Dashboard" edit="0" delete="0">
+                <header>
+                    <button name="action_open_scorecards" type="object" string="All Scorecards" class="oe_highlight"/>
+                    <button name="action_open_analytics" type="object" string="Charts and Analysis"/>
+                    <button name="action_open_evaluations" type="object" string="Evaluations History"/>
+                    <button name="action_open_alerts" type="object" string="Risk Alerts"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>Supplier Performance Dashboard</h1>
+                        <div class="text-muted">Company courante : <field name="company_id" nolabel="1"/></div>
+                    </div>
+                    <group string="Performance Overview" col="4">
+                        <field name="supplier_count" readonly="1"/>
+                        <field name="evaluated_scorecard_count" readonly="1"/>
+                        <field name="average_score" readonly="1"/>
+                        <field name="average_punctuality" readonly="1"/>
+                        <field name="on_time_rate" readonly="1"/>
+                        <field name="insufficient_count" readonly="1"/>
+                    </group>
+                    <group string="Risk Distribution" col="4">
+                        <field name="low_risk_count" readonly="1"/>
+                        <field name="moderate_risk_count" readonly="1"/>
+                        <field name="high_risk_count" readonly="1"/>
+                        <field name="critical_risk_count" readonly="1"/>
+                    </group>
+                    <group string="Open Alerts" col="3">
+                        <field name="open_alert_count" readonly="1"/>
+                        <field name="high_alert_count" readonly="1"/>
+                        <field name="critical_alert_count" readonly="1"/>
+                        <button name="action_open_critical_alerts" type="object" string="View Critical Alerts" class="oe_highlight"/>
+                        <button name="action_open_low_scores" type="object" string="View High-Risk Suppliers"/>
+                    </group>
+                    <div class="alert alert-info" role="alert">
+                        Indicators are calculated from the latest stored scorecards for the active company. Recalculate scorecards to refresh the scores and trigger risk detection.
+                    </div>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_supplier_performance_dashboard" model="ir.actions.server">
+        <field name="name">Dashboard</field>
+        <field name="model_id" ref="model_supplier_performance_dashboard"/>
+        <field name="state">code</field>
+        <field name="code"><![CDATA[
+dashboard = env['supplier.performance.dashboard'].create({'company_id': env.company.id})
+action = {
+    'type': 'ir.actions.act_window',
+    'name': 'Supplier Performance Dashboard',
+    'res_model': 'supplier.performance.dashboard',
+    'view_mode': 'form',
+    'view_id': env.ref('supplier_performance_scorecard.view_supplier_performance_dashboard_form').id,
+    'res_id': dashboard.id,
+    'target': 'current',
+}
+]]></field>
+    </record>
+
+    <menuitem id="menu_supplier_performance_dashboard" name="Dashboard" parent="menu_supplier_scorecard_root" action="action_supplier_performance_dashboard" sequence="1" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+</odoo>

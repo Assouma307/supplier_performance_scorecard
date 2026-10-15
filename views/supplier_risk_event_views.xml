@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_supplier_risk_event_list" model="ir.ui.view">
+        <field name="name">supplier.performance.risk.event.list</field>
+        <field name="model">supplier.performance.risk.event</field>
+        <field name="arch" type="xml">
+            <list string="Supplier Risk Alerts" default_order="detected_at desc">
+                <field name="detected_at"/>
+                <field name="supplier_id"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="severity" widget="badge" decoration-warning="severity == 'moderate'" decoration-danger="severity in ('high', 'critical')"/>
+                <field name="rule_code"/>
+                <field name="score_at_detection"/>
+                <field name="state" widget="badge" decoration-success="state == 'resolved'" decoration-warning="state == 'in_progress'"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_supplier_risk_event_form" model="ir.ui.view">
+        <field name="name">supplier.performance.risk.event.form</field>
+        <field name="model">supplier.performance.risk.event</field>
+        <field name="arch" type="xml">
+            <form string="Supplier Risk Alert" create="0" delete="0">
+                <header>
+                    <button name="action_mark_in_progress" type="object" string="Start Follow-up" class="oe_highlight" invisible="state != 'new'"/>
+                    <button name="action_create_followup_activity" type="object" string="Create Follow-up Activity"/>
+                    <button name="action_resolve" type="object" string="Resolve" invisible="state == 'resolved'"/>
+                    <button name="action_open_scorecard" type="object" string="Open Scorecard"/>
+                    <field name="state" widget="statusbar" statusbar_visible="new,in_progress,resolved"/>
+                </header>
+                <sheet>
+                    <div class="oe_title"><h1><field name="name"/></h1></div>
+                    <group>
+                        <group string="Supplier">
+                            <field name="supplier_id"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="scorecard_id"/>
+                            <field name="detected_at"/>
+                        </group>
+                        <group string="Risk Evidence">
+                            <field name="rule_code"/>
+                            <field name="severity" widget="badge"/>
+                            <field name="score_at_detection"/>
+                            <field name="previous_score" invisible="rule_code != 'score_drop'"/>
+                        </group>
+                    </group>
+                    <group string="Explanation"><field name="description" nolabel="1"/></group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_supplier_risk_event_search" model="ir.ui.view">
+        <field name="name">supplier.performance.risk.event.search</field>
+        <field name="model">supplier.performance.risk.event</field>
+        <field name="arch" type="xml">
+            <search string="Supplier Risk Alerts">
+                <field name="supplier_id"/>
+                <field name="rule_code"/>
+                <field name="severity"/>
+                <field name="state"/>
+                <filter name="open_alerts" string="Open Alerts" domain="[('state', '!=', 'resolved')]"/>
+                <filter name="critical_alerts" string="Critical Alerts" domain="[('severity', '=', 'critical'), ('state', '!=', 'resolved')]"/>
+            </search>
+        </field>
+    </record>
+    <record id="action_supplier_risk_event" model="ir.actions.act_window">
+        <field name="name">Risk Alerts</field>
+        <field name="res_model">supplier.performance.risk.event</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_supplier_risk_event_search"/>
+        <field name="domain">[('state', '!=', 'resolved')]</field>
+    </record>
+    <menuitem id="menu_supplier_risk_event" name="Risk Alerts" parent="menu_supplier_scorecard_root" action="action_supplier_risk_event" sequence="15" groups="supplier_performance_scorecard.group_supplier_scorecard_user"/>
+</odoo>
