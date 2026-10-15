@@ -1,5 +1,5 @@
 {
-    "name": "Supplier Performance & Risk Scorecard",
+    "name": "Supplier Scorecard",
     "version": "19.0.1.3.4",
     "category": "Purchases",
     "summary": "Evaluate supplier performance and identify purchasing risks",
